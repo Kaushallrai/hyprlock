@@ -1,6 +1,6 @@
 # EnviiLock Hyprlock Theme
 
-![EnviiLock Lockscreen Design](screenshots/envii-lock.png)
+![EnviiLock Lockscreen Design](screenshot/envii-lock.png)
 
 The **EnviiLock** theme is a pre-configured,  lockscreen for [Hyprlock](https://github.com/hyprwm/hyprlock), designed for the Hyprland Wayland compositor. Featuring a blurred screenshot background, user avatar, password input, music progress bar with artist/title display, and system information (date, time, username, hostname, uptime, and battery status), it offers a modern, vibrant aesthetic. Developed on **Fedora 42 Workstation**, this theme is ready to use on most Linux distributions with minimal setup.
 
