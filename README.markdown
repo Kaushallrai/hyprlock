@@ -1,8 +1,8 @@
-# EnviiLock Hyprlock Theme
+# EnviiLock Hyprlock 
 
 ![EnviiLock Lockscreen Design](screenshot/envii-lock.png)
 
-The **EnviiLock**  is a pre-configured,  lockscreen for [Hyprlock](https://github.com/hyprwm/hyprlock), designed for the Hyprland Wayland compositor. Featuring user avatar, password input, music progress bar with artist/title display, and system information (date, time, username, hostname, uptime, and battery status), it offers a modern, vibrant aesthetic. Developed on **Fedora 42 Workstation**, this theme is ready to use on most Linux distributions with minimal setup.
+The **EnviiLock**  is a pre-configured,  lockscreen for [Hyprlock](https://github.com/hyprwm/hyprlock), designed for the Hyprland Wayland compositor. Featuring user avatar, password input, music progress bar with artist/title display, and system information (date, time, username, hostname, uptime, and battery status), it offers a modern, vibrant aesthetic. Developed on **Fedora 42 Workstation**, this config is ready to use on most Linux distributions with minimal setup.
 
 ## Features
 - **Password Input**: Centered input field with placeholder text and error handling.
@@ -11,7 +11,7 @@ The **EnviiLock**  is a pre-configured,  lockscreen for [Hyprlock](https://githu
 - **Custom Fonts**: Uses Metropolis, SF Pro Display, and Stange for a sleek, modern look.
 
 ## Compatibility
-The **EnviiLock** theme is compatible with most Linux distributions, including **Fedora 42 Workstation**, Arch, Ubuntu, and others, provided dependencies are met. Tested on Fedora 42 Workstation, it leverages standard paths for user avatars and battery status, with Wayland support for Hyprland. Considerations:
+The **EnviiLock** is compatible with most Linux distributions, including **Fedora 42 Workstation**, Arch, Ubuntu, and others, provided dependencies are met. Tested on Fedora 42 Workstation, it leverages standard paths for user avatars and battery status, with Wayland support for Hyprland. Considerations:
 - **User Avatar**: The path `/var/lib/AccountsService/icons/$USER` is standard on Fedora and Arch but may vary (e.g., Ubuntu may use different paths).
 - **Battery Status**: Requires `/sys/class/power_supply/BAT*`, typical on laptops. Remove this section for desktops.
 - **Package Availability**: Dependencies like `hyprlock` and `playerctl` may require third-party repositories or manual installation on some distributions.
@@ -36,7 +36,7 @@ Ensure the following are installed:
   - Stange
   
 ## File Structure
-- `hyprlock.conf`: Main configuration file for the EnviiLock theme.
+- `hyprlock.conf`: Main configuration file for the EnviiLock .
 - `music-progress.sh`: Script for music progress bar and time.
 - `fonts/`: Directory with three subfolders containing Metropolis, SF Pro Display, and Stange fonts.
 
