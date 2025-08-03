@@ -2,11 +2,9 @@
 
 ![EnviiLock Lockscreen Design](screenshot/envii-lock.png)
 
-The **EnviiLock** theme is a pre-configured,  lockscreen for [Hyprlock](https://github.com/hyprwm/hyprlock), designed for the Hyprland Wayland compositor. Featuring a blurred screenshot background, user avatar, password input, music progress bar with artist/title display, and system information (date, time, username, hostname, uptime, and battery status), it offers a modern, vibrant aesthetic. Developed on **Fedora 42 Workstation**, this theme is ready to use on most Linux distributions with minimal setup.
+The **EnviiLock**  is a pre-configured,  lockscreen for [Hyprlock](https://github.com/hyprwm/hyprlock), designed for the Hyprland Wayland compositor. Featuring user avatar, password input, music progress bar with artist/title display, and system information (date, time, username, hostname, uptime, and battery status), it offers a modern, vibrant aesthetic. Developed on **Fedora 42 Workstation**, this theme is ready to use on most Linux distributions with minimal setup.
 
 ## Features
-- **Blurred Background**: Uses a screenshot with customizable blur, contrast, and brightness.
-- **User Avatar**: Displays the user's icon from `/var/lib/AccountsService/icons/$USER`.
 - **Password Input**: Centered input field with placeholder text and error handling.
 - **Music Integration**: Shows currently playing song (artist and title) and a progress bar via `playerctl`.
 - **System Info**: Displays day of the week, date, time, username, hostname, uptime, and battery status.
@@ -36,35 +34,16 @@ Ensure the following are installed:
   - Metropolis (Medium)
   - SF Pro Display
   - Stange
-
-On **Fedora 42 Workstation**, install dependencies with:
-```bash
-sudo dnf install hyprland hyprlock playerctl bash zsh coreutils fontconfig
-```
-**Note**: `hyprland` and `hyprlock` may not be in Fedora's default repositories. Use the [Hyprland community COPR](https://copr.fedorainfracloud.org/coprs/hyprwm/Hyprland/) or compile from source:
-```bash
-sudo dnf copr enable solopasha/hyprland
-sudo dnf install hyprland hyprlock
-```
-For other distributions (e.g., Arch, Ubuntu), use their package managers (`pacman`, `apt`) or check the [Hyprlock GitHub](https://github.com/hyprwm/hyprlock) for installation instructions.
-
+  
 ## File Structure
 - `hyprlock.conf`: Main configuration file for the EnviiLock theme.
 - `music-progress.sh`: Script for music progress bar and time.
 - `fonts/`: Directory with three subfolders containing Metropolis, SF Pro Display, and Stange fonts.
 
-## Installation
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/<your-username>/<your-repo>.git
-   cd <your-repo>
-   ```
+`
 
 2. **Set Up Configuration Files**:
-   Create the `~/.config/hypr/` directory:
-   ```bash
-   mkdir -p ~/.config/hypr
-   ```
+   
    Copy the configuration files:
    ```bash
    cp hyprlock.conf ~/.config/hypr/
@@ -125,5 +104,4 @@ For the music progress bar:
 ## Contributing
 Open issues or pull requests for improvements or bug fixes. Ensure changes are compatible with Fedora 42 Workstation and other distributions.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
